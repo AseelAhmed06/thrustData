@@ -3,10 +3,11 @@
 <h3><b>Overview</b></h3>
 <br>
 This project is a web-based interface for displaying and managing motor thrust data received from an ESP32. It collects, displays, and stores PWM, current, voltage, power, and thrust data in a database. Users can view real-time data, save it for later analysis, and reset tables as needed.
-
+<br><br>
 <b>Features</b>
-<br>
+<br><br>
 Real-time Data Fetching: Uses AJAX to fetch data dynamically from fetch_data.php.
+
 
 Data Visualization: Displays PWM and thrust values in real-time.
 
@@ -17,7 +18,7 @@ Data Storage: Allows users to save session data with a custom name.
 Table Management: Provides options to reset tables and view temporary data.
 <br><br>
 <b>Technologies Used</b>
-<br>
+<br><br>
 Frontend: HTML, CSS, JavaScript, jQuery
 
 Backend: PHP, MySQL
@@ -25,7 +26,7 @@ Backend: PHP, MySQL
 Database: MySQL (Tables: currentdata, temporarydata, saved_data)
 <br><br>
 <b>Setup Instructions</b>
-<br>
+<br><br>
 Clone or Download the Repository
 
 Setup MySQL Database:
@@ -42,7 +43,7 @@ Start Apache & MySQL:
 
 Use XAMPP or WAMP for local testing.
 <br><br>
-<b>Access the Webpage:</b?
+<b>Access the Webpage:</b>
 <br>
 Open http://localhost/thrust/thrust_data.php in a browser.
 <br><br>
@@ -52,12 +53,12 @@ fetch_data.php: Retrieves real-time data.
 
 thrust_data.php:
 
-Handles data storage when save_data is triggered.
+-Handles data storage when save_data is triggered.
 
-Resets tables when reset=true is passed as a URL parameter.
-
-Usage Instructions
-
+-Resets tables when reset=true is passed as a URL parameter.
+<br><br>
+<b>Usage Instructions</b>
+<br><br>
 Monitor Data: View live thrust and PWM updates.
 
 Save Data: Click Save Data, enter a name, and store the session data.
@@ -67,7 +68,6 @@ Reset Data: Click Reset Table to clear temporary data.
 View Temporary Data: Click Show Temporary Data Table to access stored temporary records.
 
 
-
-Author
-
+<br><br>
+Author<p>
 Developed by Aseel.
