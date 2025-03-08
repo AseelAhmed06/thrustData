@@ -53,9 +53,23 @@ fetch_data.php: Retrieves real-time data.
 
 thrust_data.php:
 
--Handles data storage when save_data is triggered.
+  -Handles data storage when save_data is triggered.
 
--Resets tables when reset=true is passed as a URL parameter.
+  -Resets tables when reset=true is passed as a URL parameter.
+
+post_data.php: This PHP script records PWM, current, voltage, and thrust values into a temporary table. When a new PWM value appears, it averages the stored data, saves it in the main table, clears the temporary data, and then logs the new entry.
+
+saved_data.php:This PHP web application fetches and displays distinct motor thrust datasets from a MySQL database, allowing users to select a dataset via toggle switches and download data. It dynamically loads selected dataset details using AJAX requests.
+
+download_data.php:This PHP script generates a CSV file for download, containing motor thrust data filtered by name from a MySQL database. It sets appropriate headers and fetches the relevant data securely using a prepared statement.
+
+fetch_data2.php:This PHP script retrieves motor thrust data from a MySQL database based on a given name and returns it as a JSON response. It uses prepared statements for secure data fetching.
+
+temp_data.php: This HTML page dynamically displays live sensor data by fetching updates from fetch_data_all.php every 2 seconds using jQuery AJAX. The data is presented in a table format.
+
+fetch_data_all.php: This PHP script retrieves the latest sensor data from the temporarydata table and displays it in an HTML table. If no data is found, it shows a "No data found" message.
+
+
 <br><br>
 <b>Usage Instructions</b>
 <br><br>
